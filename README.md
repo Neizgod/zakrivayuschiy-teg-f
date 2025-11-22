@@ -1,1 +1,1 @@
-https://neizgod.github.io/zakrivayuschiy-teg-f/
+https://github.com/Neizgod/zakrivayuschiy-teg-f
