@@ -5,5 +5,8 @@
   --font-weight-regular: 410;
   --font-weight-bold: 715;
   --width-page: clamp(23.4375rem, 16.2852rem + 30.5164vw, 43.75rem);
-  --text-border__color: #fff
+  --text-border__color: #fff;
+  --accent-color: #000;
+  --contour-color: #000;
+  --animation-fill-color: #FF0000;
 }
