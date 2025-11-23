@@ -42,7 +42,7 @@
           </p>
         </div>
         <div class="button__container">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               width="39"
               height="36"
@@ -75,7 +75,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button type="button" class="card__like-button button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -103,7 +103,7 @@
           </p>
         </div>
         <div class="button__container">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               width="39"
               height="36"
@@ -136,7 +136,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button type="button" class="card__like-button button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -162,7 +162,7 @@
           </p>
         </div>
         <div class="button__container">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               width="39"
               height="36"
@@ -195,7 +195,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button type="button" class="card__like-button button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -223,7 +223,7 @@
           </p>
         </div>
         <div class="button__container">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               width="39"
               height="36"
@@ -256,7 +256,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button type="button" class="card__like-button button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -285,7 +285,7 @@
           </p>
         </div>
         <div class="button__container">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               width="39"
               height="36"
@@ -318,7 +318,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button type="button" class="card__like-button button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -344,7 +344,7 @@
           </p>
         </div>
         <div class="button__container">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               width="39"
               height="36"
@@ -377,7 +377,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button type="button" class="card__like-button button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -397,7 +397,7 @@
             Во время учёбы часто возникает чувство, когда не знаешь, за что
             хвататься. Вроде и проектную пора сдавать, и задачи хочется
             порешать, и в теории получше разобраться, и жизнь не забыть пожить.
-            В такие моменты очень нужна концентрация. Вспомните, откуда вы её<br>
+            В такие моменты очень нужна концентрация. Вспомните, откуда вы её
             черпали.
           </p>
           <p class="card__paragraph">
@@ -405,7 +405,7 @@
           </p>
         </div>
         <div class="button__container">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               width="39"
               height="36"
@@ -438,7 +438,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button type="button" class="card__like-button button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -468,7 +468,7 @@
           </p>
         </div>
         <div class="button__container">
-          <button class="card__icon-button">
+          <button type="button" class="card__icon-button">
             <svg
               width="39"
               height="36"
@@ -501,7 +501,7 @@
               />
             </svg>
           </button>
-          <button class="card__like-button button">
+          <button type="button" class="card__like-button button">
             <span class="button__text">Like</span>
           </button>
         </div>
@@ -523,17 +523,28 @@
         <span class="button__text">Сохранить на память</span>
       </button>
       <dialog class="modal" id="save-modal">
-        <svg width="21" height="21" viewbox="0 0 21 21" class="modal__icon">
-          <use href="./svg/floppy.svg#floppy" />
-        </svg>
-        <p class="modal__text">Вставьте дискету, чтобы продолжить</p>
-        <button
-          class="modal__button button"
-          type="button"
-          onclick="window['save-modal'].close()"
-        >
-          <span class="button__text">ОК</span>
-        </button>
+        <div class="modal-container">
+          <div class="modal__info-container">
+            <div class="floppy__container">
+              <svg
+                width="21"
+                height="21"
+                viewbox="0 0 21 21"
+                class="modal__icon"
+              >
+                <use href="./svg/floppy.svg#floppy" />
+              </svg>
+            </div>
+            <p class="modal__text">Вставьте дискету, чтобы продолжить</p>
+          </div>
+          <button
+            class="modal__button button"
+            type="button"
+            onclick="window['save-modal'].close()"
+          >
+            <span class="button__text">ОК</span>
+          </button>
+        </div>
       </dialog>
     </main>
     <script src="./scripts/like.js"></script>
